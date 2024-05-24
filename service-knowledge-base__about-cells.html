@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Starter Kit</title>
+  <link href="https://fonts.googleapis.com/css?family=Exo+2:400,700%7CMontserrat:400,700%7COpen+Sans:400,700&display=swap&subset=cyrillic-ext,latin-ext" rel="stylesheet">
+  <link rel="shortcut icon" type="image/ico" href="/assets/images/favicon/favicon.ico"/>
+  <link media="all" rel="stylesheet" href="assets/css/vendor.min.css">
+  <link media="all" rel="stylesheet" href="assets/css/styles.min.css">
+  <script>
+      var htmlEl = document.getElementsByTagName('html')[0];
+      htmlEl.className = htmlEl.className.replace(/\bno-js\b/, 'has-js');
+      htmlEl.classList.add('freez-extended');
+      window.addEventListener('load', function () {
+      var $preloader = $('#p_prldr');
+      $preloader.fadeOut('slow');
+      setTimeout( () => {
+        htmlEl.classList.remove('freez-extended');
+      }, 600)
+  });
+    </script>
+</head>
+
+
+<body>
+    <div id="p_prldr" class="loader">
+      <div class="item-1"></div>
+      <div class="item-2"></div>
+      <div class="item-3"></div>
+      <div class="item-4"></div>
+      <div class="item-5"></div>
+    </div>
+
+  <div class="page-wrapper second-page">
+    <header class="header" id="js-header">
+      <a href="#main" aria-label="Перейти к основному контенту" class="skip-content-btn">
+        Перейти к основному контенту
+      </a>
+      <div class="header-top-holder">
+        <div class="container">
+          <div class="header-top">
+            <a href="index.html" class="logo">
+              <img loading="lazy"  src="assets/images/logo.svg" alt="Fifth Step Stem Cell Treatment Center">
+            </a>
+            <div class="header-right">
+              <button class="lang-wrapper animated" aria-label="сменить язык" aria-haspopup="true" role="button" aria-expanded="false">
+                <ul class="lang" role="menubar">
+                  <li role="menuitem">
+                    <span>Ru</span>
+                  </li>
+                  <li role="menuitem">
+                    <ul role="menubar">
+                      <li role="menuitem">
+                        <a href="#">Ua</a>
+                      </li>
+                      <li role="menuitem">
+                        <a href="#">En</a>
+                      </li>
+                      <li role="menuitem">
+                        <a href="#">Fu</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="icon icon-arrow">
+                </div>
+              </button>
+              <div class="controll-acc animated">
+                <a href="404.html" aria-label="войти в личный кабинет">
+                  <div class="icon">
+                    <svg enable-background="new 0 0 409.165 409.164" version="1.1" viewBox="0 0 409.165 409.164"
+                         xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="m204.58 216.67c50.664 0 91.74-48.075 91.74-107.38 0-82.237-41.074-107.38-91.74-107.38-50.668 0-91.74 25.14-91.74 107.38 1e-3 59.303 41.073 107.38 91.74 107.38z" />
+                      <path
+                        d="m407.16 374.72l-46.284-104.26c-2.117-4.771-5.836-8.728-10.465-11.138l-71.83-37.392c-1.584-0.823-3.502-0.663-4.926 0.415-20.316 15.366-44.203 23.488-69.076 23.488-24.877 0-48.762-8.122-69.078-23.488-1.428-1.078-3.346-1.238-4.93-0.415l-71.825 37.392c-4.631 2.41-8.346 6.365-10.465 11.138l-46.284 104.26c-3.191 7.188-2.537 15.412 1.75 22.005 4.285 6.592 11.537 10.526 19.4 10.526h362.86c7.863 0 15.117-3.936 19.402-10.527 4.285-6.592 4.941-14.819 1.75-22.004z" />
+                    </svg>
+                  </div>
+                  Вход
+                </a>
+              </div>
+              <a href="#" class="btn btn-color desktop-button" aria-label="заказать обратный звонок">Обратный звонок</a>
+            </div>
+            <button class="hamburger hamburger--squeeze mobile-menu-btn" type="button" aria-label="Мобильное меню" aria-expanded="false">
+              мобильное меню
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="header-menu-holder">
+        <div class="container">
+          <div class="header-menu">
+            <nav class="header-menu-wrapper">
+              <ul class="navigation">
+                <li class="nav-item">
+                  <a href="index.html">Главная</a>
+                </li>
+                <li class="menu-dropdown nav-item">
+                  <a href="#" aria-haspopup="true" aria-expanded="false">
+                    О нас
+                    <div class="icon icon-arrow">
+                    </div>
+                  </a>
+                  <div class="secondary-menu-wrapper">
+                    <ul class="secondary-menu animated animated-03">
+                      <li>
+                        <a href="about__our-mission.html">Наша миссия</a>
+                      </li>
+                      <li>
+                        <a href="about__our-clinic.html">О медицинском центре</a>
+                      </li>
+                      <li>
+                        <a href="about__our-specialists.html">Наши специалисты</a>
+                      </li>
+                      <li>
+                        <a href="about__documents.html">Наши патенты и сертификаты</a>
+                      </li>
+                      <li>
+                        <a href="about__research.html">Исследовательские программы</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu-dropdown nav-item">
+                  <a href="#" aria-haspopup="true" aria-expanded="false">
+                    Пациентам
+                    <div class="icon icon-arrow">
+                    </div>
+                  </a>
+                  <div class="secondary-menu-wrapper">
+                    <ul class="secondary-menu animated animated-03">
+                      <li>
+                        <a href="service-knowledge-base__about-cells.html">О клетках</a>
+                      </li>
+                      <li>
+                        <a href="service-knowledge-base__about-service.html">Об услуге</a>
+                      </li>
+                      <li>
+                        <a href="service-knowledge-base__tourism.html">Туризм</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a href="diseases.html">Заболевания</a>
+                </li>
+                <li class="nav-item">
+                  <a href="rejuvenation.html">Омоложение</a>
+                </li>
+                <li class="menu-dropdown nav-item">
+                  <a href="#" aria-haspopup="true" aria-expanded="false">
+                    Блог
+                    <div class="icon icon-arrow">
+                    </div>
+                  </a>
+                  <div class="secondary-menu-wrapper">
+                    <ul class="header-secondary-menu secondary-menu animated animated-03">
+                      <li>
+                        <a href="blog__articles.html">Статьи</a>
+                      </li>
+                      <li>
+                        <a href="blog__photos.html">Фото</a>
+                      </li>
+                      <li>
+                        <a href="blog__events.html">События</a>
+                      </li>
+                      <li>
+                        <a href="blog__history.html">История</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a href="feedback.html">Отзывы</a>
+                </li>
+                <li class="nav-item">
+                  <a href="price-list.html">Прайс-лист</a>
+                </li>
+                <li class="nav-item">
+                  <a href="contacts.html">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- /.header-menu-wrapper -->
+            <a href="#" class="btn btn-color menu-btn">Обратный звонок</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+		<main id="main">
+      <div class="breadcrumbs">
+        <div class="container">
+          <div class="container-content">
+            <nav aria-label="breadcrumbs">
+            <ul class="breadcrumbs-list">
+                
+                  <li>
+                  <a href="#">Главная</a>
+                  </li>
+                
+                  <li>
+                  <a href="#">Пациентам</a>
+                  </li>
+                
+                  <li>
+                  О клетках
+                  </li>
+                
+            </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <section class="patients-cells-general-info">
+      			<div class="container">
+      					<div class="section-title">
+      					  <span class="section-title-number">01</span>
+      					  <h2 class="section-title-name">Клеточная терапия</h2>
+      					</div>
+      			<div class="wrapper">
+      				<h3 class="title-item">О клетках</h3>
+      				<div class="patients-cells-info">
+      				  <picture class="patients-cells-img">
+      				      <source media="(max-width: 980px)"
+      				        srcset="./assets/images/patients-cells/patients-cells-info1.jpg">
+      				        <source media="(max-width: 480px)"
+      				        srcset="./assets/images/patients-cells/patients-cells-info1.jpg">
+      				      <img loading="lazy"   src="./assets/images/patients-cells/patients-cells-info1.jpg" srcset="./assets/images/patients-cells/patients-cells-info1.jpg" alt="Лаборатория">
+      				    </picture>
+      					<!-- /.patients-cells-img -->
+      					<div class="patients-cells-text">
+      							 
+      								<p>
+      									Клеточная терапия – это способ лечения с применением стволовых клеток. Надежды врачей и пациентов связаны с их огромным восстановительным и стимулирующим потенциалом. И следует признать, что во многих случаях эти ожидания оправдываются. Клеточная терапия позволяет достигать целей по таким направлениям, о которых ещё совсем недавно мы даже не мечтали. Речь идёт, прежде всего, о регенеративном потенциале стволовых клеток.
+      									</p>
+      									 
+      								<p>
+      									Что же такое «стволовые клетки», какие существуют виды стволовых клеток и чем они отличаются?
+      									</p>
+      									 
+      								<p>
+      									Если представить себе процесс развития и дифференцировки клеток человеческого организма в виде дерева, то корнем можно считать оплодотворённую яйцеклетку, а стволом последующие 4 этапа её деления. Такие клетки называют тотипотентные. Тotus по-латински означает «всеобъемлющий». Как из ствола дерева происходят ветви и листья, так и из тотипотентных клеток в результате дифференцировки происходят абсолютно все органы и ткани. Из одной такой клетки может вырасти полноценный организм.
+      									</p>
+      									 
+      								<p>
+      									Следующими по уровню дифференцировки являются плюрипотентные клетки. Они составляют основную массу зародыша. Поэтому их называют эмбриональными (ESC). Эмбриональные клетки также формируют ствол «дерева жизни». Эти клетки дают начало всем трём главным «ветвям дерева» - зародышевым листкам: эктодерме, мезодерме и энтодерме. И хотя они обладают способностью дифференцироваться во все типы клеток, организм из неё вырасти не может.
+      									</p>
+      									
+      					</div>
+      					<!-- /.patients-cells-text -->
+      				</div>
+      				<!-- /.patients-cells-info -->
+
+      				<div class="patients-cells-info">
+      				  <picture class="patients-cells-img">
+      				      <source media="(max-width: 980px)"
+      				        srcset="./assets/images/patients-cells/patients-cells-info2.jpg">
+      				        <source media="(max-width: 480px)"
+      				        srcset="./assets/images/patients-cells/patients-cells-info2.jpg">
+      				      <img loading="lazy"   src="./assets/images/patients-cells/patients-cells-info2.jpg" srcset="./assets/images/patients-cells/patients-cells-info2.jpg" alt="Клетки">
+      				    </picture>
+      					<!-- /.patients-cells-img -->
+      					<div class="patients-cells-text">
+      							 
+      								<p>
+      									Далее по иерархии идут мультипотентные клетки. Они способны превращаться в любую клетку, но в пределах своего зародышевого листка. К мультипотентным клеткам относятся Мезенхимальные Стволовые Клетки (MSC) и Гемопоэтические Стволовые Клетки (НSC). Гемопоэтичекие стволовые клетки являются предшественниками всех клеток крови. Ни в какую другую клетку они развиться не могут.
+      									</p>
+      									 
+      								<p>
+      									Мезенхимальные стволовые клетки (MSC) часто называют взрослыми стволовыми клетками. Так же, как и гемопоэтические, они присутствуют в организме человека после его рождения. В результате дифференцировки из них формируются клетки нервной системы, костей, жира, печени, сердечной мышцы и др. Способность MSC к самообновлению и дифференцировке в большое количество специализированных клеток, а также отсутствие этических проблем при их получении делает MSC ценным материалом для клеточной терапии.
+      									</p>
+      									 
+      								<p>
+      									На сегодняшний день мезенхимальные стволовые клетки являются самыми изученными и самыми применяемыми в практической медицине.
+      									</p>
+      									 
+      								<p>
+      									Если мы используем для терапии собственные стволовые клетки, то есть выделенные из тканей самого пациента, то такие клетки называют аутогенными или аутоклетками.
+      									</p>
+      									 
+      								<p>
+      									Чужие стволовые клетки, взятые у другого человека, называют аллогенными или аллоклетки.
+      									</p>
+      									 
+      								<p>
+      									Введение стволовых клеток животных человеку называется ксенотрансплантацией.
+      									</p>
+      									 
+      								<p>
+      									Приоритетным методом лечения в МЦ «СмартМедикалЦелл» является введение собственных стволовых клеток. Аутоклетки не отторгаются, не вызывают иммунных реакций, отсутствует риск переноса инфекции. После введения, распределившись по органам и тканям, они созревают и превращаются в специализированные клетки организма, которые в дальнейшем полноценно функционируют. Например, попадая в печень, мезенхимальная стволовая аутоклетка становится печёночной. Попадая в сердечную мышцу – сердечной.
+      									</p>
+      									 
+      								<p>
+      									К сожалению, с возрастом стволовых клеток в организме человека становится всё меньше и меньше. Это негативно отражается на способности организма к восстановлению, срастанию переломов, заживлению ран. У пожилых людей их настолько мало, а их пролифиративный потенциал настолько низкий, что собственный исходный материал (костный мозг, подкожный жир, кровь) становится невозможным использовать для получения качественного биологического препарата. Поэтому большинство специалистов у таких пациентов предпочитают применять аллогенную трансплантацию.
+      									</p>
+      									
+      					</div>
+      					<!-- /.patients-cells-text -->
+      				</div>
+      				<!-- /.patients-cells-info -->
+
+      				<h3 class="secondary-title">Показания к назначению клеточной терапии следующие:</h3>
+      				<ul class="cell-therapy-prescriptions">
+      						
+      								<li class="item-wrapper"> 
+      										<span class="item-number">01</span><p class="item-text">Нейродегенеративные заболевания: болезнь Паркинсона, болезнь Альцгеймера, Боковой амиотрофический склероз, Рассеянный склероз.</p>
+      							</li>
+      							
+      								<li class="item-wrapper"> 
+      										<span class="item-number">02</span><p class="item-text">Инсульт геморрагический и ишемический</p>
+      							</li>
+      							
+      								<li class="item-wrapper"> 
+      										<span class="item-number">03</span><p class="item-text">Посттравматическая эпилепсия, последствия Черепно-мозговых травм</p>
+      							</li>
+      							
+      								<li class="item-wrapper"> 
+      										<span class="item-number">04</span><p class="item-text">Инфаркт миокарда, ишемическая болезнь сердца, кардиосклероз, атеросклероз сосудов, гипертоническая болезнь</p>
+      							</li>
+      							
+      								<li class="item-wrapper"> 
+      										<span class="item-number">05</span><p class="item-text">Заболевания печени: жировой гепатоз, цирроз</p>
+      							</li>
+      							
+      								<li class="item-wrapper"> 
+      										<span class="item-number">06</span><p class="item-text">Сахарный диабет 2 типа, метаболический синдром</p>
+      							</li>
+      							
+      								<li class="item-wrapper"> 
+      										<span class="item-number">07</span><p class="item-text">Артроз, не срастающиеся переломы, повреждения сухожилий</p>
+      							</li>
+      							
+      								<li class="item-wrapper"> 
+      										<span class="item-number">08</span><p class="item-text">Аутоиммунные заболевания: системная красная волчанка, ревматоидный артрит, сахарный диабет 1 типа, псориаз, язвенный колит и др.</p>
+      							</li>
+      							
+      								<li class="item-wrapper"> 
+      										<span class="item-number">09</span><p class="item-text">Anti-Age (антивозрастная) терапия, коррекция возрастных изменений кожи.</p>
+      							</li>
+      							
+      								<li class="item-wrapper"> 
+      										<span class="item-number">10</span><p class="item-text">Синдром хронической усталости</p>
+      							</li>
+      							
+
+      				</ul>
+
+      			</div>
+      			<!-- /.wrapper -->
+      		</div>
+      		<!-- /.container -->
+      		</section>
+      		<section class="patients-cells-effects section-dark">
+            <div class="section-dark-background pattern non-text-node"></div>
+      			<div class="container">
+      				<div class="wrapper">
+
+      						<div class="cell-therapy-effects">
+      						<div class="list-type-icon">
+      						  <h3 class="secondary-title">Абсолютно все пациенты примерно через 3-4 недели после введения стволовых клеток отмечают:</h3>
+      						  <ul class="list-type-icon-wrapper">
+      						     <li class="list-type-icon-item">
+      						      <div class="list-type-icon-picture">
+      						        <svg viewBox="0 0 384 384" xmlns="http://www.w3.org/2000/svg">
+      						          <path
+      						            d="m192 384c105.863281 0 192-86.128906 192-192 0-18.273438-2.550781-36.28125-7.601562-53.527344-2.488282-8.480468-11.34375-13.351562-19.847657-10.863281-8.488281 2.480469-13.34375 11.367187-10.863281 19.847656 4.183594 14.328125 6.3125 29.320313 6.3125 44.542969 0 88.222656-71.777344 160-160 160s-160-71.777344-160-160 71.777344-160 160-160c32.0625 0 62.910156 9.375 89.207031 27.105469 7.320313 4.941406 17.273438 3 22.207031-4.320313 4.9375-7.328125 3.011719-17.273437-4.316406-22.210937-31.601562-21.308594-68.632812-32.574219-107.097656-32.574219-105.863281 0-192 86.128906-192 192s86.136719 192 192 192zm0 0" />
+      						          <path
+      						            d="m356.6875 36.6875-164.6875 164.679688-52.6875-52.679688c-6.25-6.246094-16.375-6.246094-22.625 0-6.246094 6.25-6.246094 16.375 0 22.625l64 64c3.128906 3.128906 7.214844 4.6875 11.3125 4.6875s8.183594-1.558594 11.3125-4.6875l176-176c6.246094-6.25 6.246094-16.375 0-22.625-6.25-6.246094-16.375-6.246094-22.625 0zm0 0" />
+      						        </svg>
+      						      </div>
+      						      Прилив сил
+      						      </li>
+      						       <li class="list-type-icon-item">
+      						      <div class="list-type-icon-picture">
+      						        <svg viewBox="0 0 384 384" xmlns="http://www.w3.org/2000/svg">
+      						          <path
+      						            d="m192 384c105.863281 0 192-86.128906 192-192 0-18.273438-2.550781-36.28125-7.601562-53.527344-2.488282-8.480468-11.34375-13.351562-19.847657-10.863281-8.488281 2.480469-13.34375 11.367187-10.863281 19.847656 4.183594 14.328125 6.3125 29.320313 6.3125 44.542969 0 88.222656-71.777344 160-160 160s-160-71.777344-160-160 71.777344-160 160-160c32.0625 0 62.910156 9.375 89.207031 27.105469 7.320313 4.941406 17.273438 3 22.207031-4.320313 4.9375-7.328125 3.011719-17.273437-4.316406-22.210937-31.601562-21.308594-68.632812-32.574219-107.097656-32.574219-105.863281 0-192 86.128906-192 192s86.136719 192 192 192zm0 0" />
+      						          <path
+      						            d="m356.6875 36.6875-164.6875 164.679688-52.6875-52.679688c-6.25-6.246094-16.375-6.246094-22.625 0-6.246094 6.25-6.246094 16.375 0 22.625l64 64c3.128906 3.128906 7.214844 4.6875 11.3125 4.6875s8.183594-1.558594 11.3125-4.6875l176-176c6.246094-6.25 6.246094-16.375 0-22.625-6.25-6.246094-16.375-6.246094-22.625 0zm0 0" />
+      						        </svg>
+      						      </div>
+      						      Повышение работоспособности
+      						      </li>
+      						       <li class="list-type-icon-item">
+      						      <div class="list-type-icon-picture">
+      						        <svg viewBox="0 0 384 384" xmlns="http://www.w3.org/2000/svg">
+      						          <path
+      						            d="m192 384c105.863281 0 192-86.128906 192-192 0-18.273438-2.550781-36.28125-7.601562-53.527344-2.488282-8.480468-11.34375-13.351562-19.847657-10.863281-8.488281 2.480469-13.34375 11.367187-10.863281 19.847656 4.183594 14.328125 6.3125 29.320313 6.3125 44.542969 0 88.222656-71.777344 160-160 160s-160-71.777344-160-160 71.777344-160 160-160c32.0625 0 62.910156 9.375 89.207031 27.105469 7.320313 4.941406 17.273438 3 22.207031-4.320313 4.9375-7.328125 3.011719-17.273437-4.316406-22.210937-31.601562-21.308594-68.632812-32.574219-107.097656-32.574219-105.863281 0-192 86.128906-192 192s86.136719 192 192 192zm0 0" />
+      						          <path
+      						            d="m356.6875 36.6875-164.6875 164.679688-52.6875-52.679688c-6.25-6.246094-16.375-6.246094-22.625 0-6.246094 6.25-6.246094 16.375 0 22.625l64 64c3.128906 3.128906 7.214844 4.6875 11.3125 4.6875s8.183594-1.558594 11.3125-4.6875l176-176c6.246094-6.25 6.246094-16.375 0-22.625-6.25-6.246094-16.375-6.246094-22.625 0zm0 0" />
+      						        </svg>
+      						      </div>
+      						      Улучшение аппетита
+      						      </li>
+      						       <li class="list-type-icon-item">
+      						      <div class="list-type-icon-picture">
+      						        <svg viewBox="0 0 384 384" xmlns="http://www.w3.org/2000/svg">
+      						          <path
+      						            d="m192 384c105.863281 0 192-86.128906 192-192 0-18.273438-2.550781-36.28125-7.601562-53.527344-2.488282-8.480468-11.34375-13.351562-19.847657-10.863281-8.488281 2.480469-13.34375 11.367187-10.863281 19.847656 4.183594 14.328125 6.3125 29.320313 6.3125 44.542969 0 88.222656-71.777344 160-160 160s-160-71.777344-160-160 71.777344-160 160-160c32.0625 0 62.910156 9.375 89.207031 27.105469 7.320313 4.941406 17.273438 3 22.207031-4.320313 4.9375-7.328125 3.011719-17.273437-4.316406-22.210937-31.601562-21.308594-68.632812-32.574219-107.097656-32.574219-105.863281 0-192 86.128906-192 192s86.136719 192 192 192zm0 0" />
+      						          <path
+      						            d="m356.6875 36.6875-164.6875 164.679688-52.6875-52.679688c-6.25-6.246094-16.375-6.246094-22.625 0-6.246094 6.25-6.246094 16.375 0 22.625l64 64c3.128906 3.128906 7.214844 4.6875 11.3125 4.6875s8.183594-1.558594 11.3125-4.6875l176-176c6.246094-6.25 6.246094-16.375 0-22.625-6.25-6.246094-16.375-6.246094-22.625 0zm0 0" />
+      						        </svg>
+      						      </div>
+      						      Повышение жизненного тонуса
+      						      </li>
+      						       <li class="list-type-icon-item">
+      						      <div class="list-type-icon-picture">
+      						        <svg viewBox="0 0 384 384" xmlns="http://www.w3.org/2000/svg">
+      						          <path
+      						            d="m192 384c105.863281 0 192-86.128906 192-192 0-18.273438-2.550781-36.28125-7.601562-53.527344-2.488282-8.480468-11.34375-13.351562-19.847657-10.863281-8.488281 2.480469-13.34375 11.367187-10.863281 19.847656 4.183594 14.328125 6.3125 29.320313 6.3125 44.542969 0 88.222656-71.777344 160-160 160s-160-71.777344-160-160 71.777344-160 160-160c32.0625 0 62.910156 9.375 89.207031 27.105469 7.320313 4.941406 17.273438 3 22.207031-4.320313 4.9375-7.328125 3.011719-17.273437-4.316406-22.210937-31.601562-21.308594-68.632812-32.574219-107.097656-32.574219-105.863281 0-192 86.128906-192 192s86.136719 192 192 192zm0 0" />
+      						          <path
+      						            d="m356.6875 36.6875-164.6875 164.679688-52.6875-52.679688c-6.25-6.246094-16.375-6.246094-22.625 0-6.246094 6.25-6.246094 16.375 0 22.625l64 64c3.128906 3.128906 7.214844 4.6875 11.3125 4.6875s8.183594-1.558594 11.3125-4.6875l176-176c6.246094-6.25 6.246094-16.375 0-22.625-6.25-6.246094-16.375-6.246094-22.625 0zm0 0" />
+      						        </svg>
+      						      </div>
+      						      Существенное улучшение потенции
+      						      </li>
+      						       <li class="list-type-icon-item">
+      						      <div class="list-type-icon-picture">
+      						        <svg viewBox="0 0 384 384" xmlns="http://www.w3.org/2000/svg">
+      						          <path
+      						            d="m192 384c105.863281 0 192-86.128906 192-192 0-18.273438-2.550781-36.28125-7.601562-53.527344-2.488282-8.480468-11.34375-13.351562-19.847657-10.863281-8.488281 2.480469-13.34375 11.367187-10.863281 19.847656 4.183594 14.328125 6.3125 29.320313 6.3125 44.542969 0 88.222656-71.777344 160-160 160s-160-71.777344-160-160 71.777344-160 160-160c32.0625 0 62.910156 9.375 89.207031 27.105469 7.320313 4.941406 17.273438 3 22.207031-4.320313 4.9375-7.328125 3.011719-17.273437-4.316406-22.210937-31.601562-21.308594-68.632812-32.574219-107.097656-32.574219-105.863281 0-192 86.128906-192 192s86.136719 192 192 192zm0 0" />
+      						          <path
+      						            d="m356.6875 36.6875-164.6875 164.679688-52.6875-52.679688c-6.25-6.246094-16.375-6.246094-22.625 0-6.246094 6.25-6.246094 16.375 0 22.625l64 64c3.128906 3.128906 7.214844 4.6875 11.3125 4.6875s8.183594-1.558594 11.3125-4.6875l176-176c6.246094-6.25 6.246094-16.375 0-22.625-6.25-6.246094-16.375-6.246094-22.625 0zm0 0" />
+      						        </svg>
+      						      </div>
+      						      Повышение либидо
+      						      </li>
+      						       <li class="list-type-icon-item">
+      						      <div class="list-type-icon-picture">
+      						        <svg viewBox="0 0 384 384" xmlns="http://www.w3.org/2000/svg">
+      						          <path
+      						            d="m192 384c105.863281 0 192-86.128906 192-192 0-18.273438-2.550781-36.28125-7.601562-53.527344-2.488282-8.480468-11.34375-13.351562-19.847657-10.863281-8.488281 2.480469-13.34375 11.367187-10.863281 19.847656 4.183594 14.328125 6.3125 29.320313 6.3125 44.542969 0 88.222656-71.777344 160-160 160s-160-71.777344-160-160 71.777344-160 160-160c32.0625 0 62.910156 9.375 89.207031 27.105469 7.320313 4.941406 17.273438 3 22.207031-4.320313 4.9375-7.328125 3.011719-17.273437-4.316406-22.210937-31.601562-21.308594-68.632812-32.574219-107.097656-32.574219-105.863281 0-192 86.128906-192 192s86.136719 192 192 192zm0 0" />
+      						          <path
+      						            d="m356.6875 36.6875-164.6875 164.679688-52.6875-52.679688c-6.25-6.246094-16.375-6.246094-22.625 0-6.246094 6.25-6.246094 16.375 0 22.625l64 64c3.128906 3.128906 7.214844 4.6875 11.3125 4.6875s8.183594-1.558594 11.3125-4.6875l176-176c6.246094-6.25 6.246094-16.375 0-22.625-6.25-6.246094-16.375-6.246094-22.625 0zm0 0" />
+      						        </svg>
+      						      </div>
+      						      Улучшение памяти
+      						      </li>
+      						       <li class="list-type-icon-item">
+      						      <div class="list-type-icon-picture">
+      						        <svg viewBox="0 0 384 384" xmlns="http://www.w3.org/2000/svg">
+      						          <path
+      						            d="m192 384c105.863281 0 192-86.128906 192-192 0-18.273438-2.550781-36.28125-7.601562-53.527344-2.488282-8.480468-11.34375-13.351562-19.847657-10.863281-8.488281 2.480469-13.34375 11.367187-10.863281 19.847656 4.183594 14.328125 6.3125 29.320313 6.3125 44.542969 0 88.222656-71.777344 160-160 160s-160-71.777344-160-160 71.777344-160 160-160c32.0625 0 62.910156 9.375 89.207031 27.105469 7.320313 4.941406 17.273438 3 22.207031-4.320313 4.9375-7.328125 3.011719-17.273437-4.316406-22.210937-31.601562-21.308594-68.632812-32.574219-107.097656-32.574219-105.863281 0-192 86.128906-192 192s86.136719 192 192 192zm0 0" />
+      						          <path
+      						            d="m356.6875 36.6875-164.6875 164.679688-52.6875-52.679688c-6.25-6.246094-16.375-6.246094-22.625 0-6.246094 6.25-6.246094 16.375 0 22.625l64 64c3.128906 3.128906 7.214844 4.6875 11.3125 4.6875s8.183594-1.558594 11.3125-4.6875l176-176c6.246094-6.25 6.246094-16.375 0-22.625-6.25-6.246094-16.375-6.246094-22.625 0zm0 0" />
+      						        </svg>
+      						      </div>
+      						      Повышение мыслительных способностей
+      						      </li>
+      						      
+      						  </ul>
+      						</div>
+      						</div>
+      						<!-- /.cell-therapy-effects -->	
+      				</div>
+      				<!-- /.wrapper -->
+      			</div>
+      			<!-- /.container -->
+      		</section>
+      		<section class="patients-cells-sources">
+      			<div class="container">
+      					<div class="section-title">
+      					  <span class="section-title-number">02</span>
+      					  <h2 class="section-title-name">Источник</h2>
+      					</div>
+      			<div class="wrapper">
+      				<h3 class="title-item">Источники клеток</h3>
+      				
+      					<article class="two-column-text-img-component @@layoutClass">
+      							<div class="text-wrapper">
+      							<p class="text-content">Наиболее богаты мезенхимальными стволовыми клетками костный мозг и жировая ткань. Именно эти ткани являются основным источником для получения качественных колоний. В существенно меньшем количестве их находят в зубной пульпе, глазном яблоке и лёгких.</p>
+      							<p class="text-content">Кроме организма взрослого человека МСК находят в тканях, связанных с родами: плаценте, ворсинках хориона, амниотической жидкости, пуповине. Причём наиболее качественные клетки получают именно из пуповины, а точнее из её оболочки – желе Уортона. Однако процесс выделения стволовых клеток из желе Уортона чрезвычайно трудоёмкий и поэтому на практике используется редко.</p>
+      						</div>
+      						<!-- /.text-wrapper -->
+      				      <picture class="img-content">
+      				          <source media="(max-width: 980px)"
+      				            srcset="./assets/images/patients-cells/cells-sources.jpg">
+      				            <source media="(max-width: 480px)"
+      				            srcset="./assets/images/patients-cells/cells-sources.jpg">
+      				          <img loading="lazy"   src="./assets/images/patients-cells/cells-sources.jpg" srcset="./assets/images/patients-cells/cells-sources.jpg" alt="Источники клеток">
+      				        </picture>
+      						</article>
+      			</div>
+      			<!-- /.wrapper -->
+      		</div>
+      		<!-- /.container -->
+      		</section>
+      		<section class="patients-cells-mechanism">
+      			<div class="container">
+      					<div class="section-title">
+      					  <span class="section-title-number">03</span>
+      					  <h2 class="section-title-name">Механизм действия</h2>
+      					</div>
+      					<div class="wrapper">
+      							<article class="cells-mechanism">
+      							<h3 class="title-item">Механизм действия стволовых клеток</h3>
+      							<div class="cells-mechanism-text">
+      									<div class="column-text">
+      									  <h5 class=""></h5>
+      									  <div class="column-text-wrapper">
+      									    
+      									      <div class="column-text-item">
+      									        <p>На сегодняшний день известно известно 2 механизма действия стволовых клеток.
+      									        </p>
+      									        <p><strong>Первый</strong> связан с их способностью после введения прикрепляться к органам и тканям и под действием окружающей микросреды трансформироваться в зрелые специализированные клетки организма. Такой эффект называется «хоуминг».</p>
+      									        <p>Другими словами, МСК способны мигрировать к месту повреждения, закрепляться, превращаться в зрелые специализированные клетки органов и тканей, а так же замещать собой поврежденные или погибшие клетки.</p>
+      									      </div>
+      									      
+      									      <div class="column-text-item">
+      									        <p>
+      									        		Однако, реализация данного механизма возможна только с аутоклетками. Ведь созревание стволовой клетки делает её «видимой» для иммунитета. Если этот объект окажется чужеродным – он будет очень быстро ликвидирован. Тогда как собственная клетка приживётся без проблем.
+      									        </p>
+      									        <p>
+      									        		<strong>Второй</strong> механизм терапевтического эффекта стволовых клеток обусловлен действием, так называемых, факторов роста. Факторы роста – это белки, продуцируемые стволовыми клетками и обладающие стимулирующим действием. Выработка факторов роста приводит к повышению функциональной активности клеток организма. В том числе стимулирует деление собственных стволовых клеток.
+      									        </p>
+      									      </div>
+      									      
+      									  </div>
+      									</div>
+      							</div>
+      							<!-- /.cells-mechanism-text -->
+      							<h5 class="secondary-title cells-mechanism-subtitle">Мезенхимальные стволовые клетки обладают уникальными
+      									свойствами, которые делают их ценным терапевтическим материалом:</h5>
+      									<ul class="cells-mechanism-advantages">
+      											
+      													<li class="item-wrapper"> 
+      															<span class="item-number">01</span><p class="item-text" aria-describedby="selfRenewal"><span class="item-text-bold" id="selfRenewal">Самообновление</span> – способность проводить неограниченное количество делений. То есть следующие поколения клеток не теряют «стволовые» свойства.</p>
+      												</li>
+      												
+      													<li class="item-wrapper"> 
+      															<span class="item-number">02</span><p class="item-text" aria-describedby="differentiation"><span class="item-text-bold" id="differentiation">Дифференциация</span> – способность дифференцироваться в различные зрелые структуры: клетки костей, хряща, сердца, мышц, жира, печени, нервов и т.д.</p>
+      												</li>
+      												
+      													<li class="item-wrapper"> 
+      															<span class="item-number">03</span><p class="item-text" aria-describedby="immunomodulation"><span class="item-text-bold" id="immunomodulation">Иммуносупрессия/иммуномодуляция</span> – способность изменять действие иммунных клеток, подавляя их избыточный ответ на антигены собственных тканей. Это свойство с успехом применяют в лечении аутоиммунных заболеваний.</p>
+      												</li>
+      												
+      													<li class="item-wrapper"> 
+      															<span class="item-number">04</span><p class="item-text" aria-describedby="antiage"><span class="item-text-bold" id="antiage">Антивозрастные</span> – способность «реанимировать» повреждённые собственные клетки организма.</p>
+      												</li>
+      												
+      													<li class="item-wrapper"> 
+      															<span class="item-number">05</span><p class="item-text" aria-describedby="antigenetic"><span class="item-text-bold" id="antigenetic">Ангиогенные</span> – способность стимулировать образование новых кровеносных сосудов. Это очень важно для заживления ран.</p>
+      												</li>
+      												
+      													<li class="item-wrapper"> 
+      															<span class="item-number">06</span><p class="item-text" aria-describedby="renewal"><span class="item-text-bold" id="renewal">Восстанавливающие</span> – способность находить место повреждения, закрепляться там и активизировать процессы восстановления тканей.</p>
+      												</li>
+      												
+      													<li class="item-wrapper"> 
+      															<span class="item-number">07</span><p class="item-text" aria-describedby="antiInflammatory"><span class="item-text-bold" id="antiInflammatory">Противовоспалительные</span> – способность подавлять воспалительные процессы в организме, выделяя специфические биологически активные вещества.</p>
+      												</li>
+      												
+      													<li class="item-wrapper"> 
+      															<span class="item-number">08</span><p class="item-text" aria-describedby="antimicrobial"><span class="item-text-bold" id="antimicrobial">Антимикробные</span> – способность поддерживать иммунный ответ организма против бактерий, вирусов и паразитов.</p>
+      												</li>
+      												
+
+      									</ul>
+      							</article>
+      							<!-- /.cells-mechanism -->
+
+      					</div>
+      					<!-- /.wrapper -->
+      			</div>
+      			<!-- /.container -->
+      		</section>
+      		<section class="patients-cells-efficiency section-dark">
+            <div class="section-dark-background pattern non-text-node"></div>
+      			<div class="container">
+      				<div class="section-title">
+      				  <span class="section-title-number">04</span>
+      				  <h2 class="section-title-name">Эффективность</h2>
+      				</div>
+      				<div class="wrapper">
+      					<h3 class="title-item">Эффективность терапии</h3>
+      					<div class="img-left">
+      						<div class="text-wrapper">
+      								 
+      									<p>
+      										Благодаря поразительным клиническим результатам клеточную терапию в обществе стали воспринимать как некое чудодейственное средство, способное сказочным образом избавить от любой болезни. Такие завышенные ожидания продиктованы надеждой, если не на исцеление, то хотя бы на существенное облегчение течения заболеваний.
+      										</p>
+      										 
+      									<p>
+      										И хотя клеточная терапия развивается, появляются новые методики, новые возможности, тем не менее, этот способ лечения нельзя считать панацеей. Он имеет свои ограничения.
+      										</p>
+      										
+      						</div>
+      						<!-- /.text-wrapper -->
+      					  <picture class="img-wrapper">
+      					      <source media="(max-width: 980px)"
+      					        srcset="./assets/images/patients-cells/cells-efficincy.jpg">
+      					        <source media="(max-width: 480px)"
+      					        srcset="./assets/images/patients-cells/cells-efficincy.jpg">
+      					      <img loading="lazy"   src="./assets/images/patients-cells/cells-efficincy.jpg" srcset="./assets/images/patients-cells/cells-efficincy.jpg" alt="Эффективность терапии">
+      					    </picture>
+
+      						<!-- /.img-wrapper -->
+      					</div>
+      					<!-- /.img-left -->
+
+      				</div>
+      				<!-- /.wrapper -->
+      			</div>
+      			<!-- /.container -->
+      		</section>
+      		<section class="patients-cells-efficiency-dependencies">
+      			<div class="container">
+      				<div class="wrapper">
+      					<div class="cells-efficiency-dependencies">
+      						<p class="cells-efficiency-text">Эффективность терапии стволовыми клетками зависит от:</p>
+      						<ul class="cells-efficiency-list">
+      							
+      									<li class="item-wrapper"> 
+      											<span class="item-number">01 Формы заболевания</span><p class="item-text">Разные формы одного и того же заболевания могут проявлять разную чувствительность к лечению стволовыми клетками.</p>
+      								</li>
+      								
+      									<li class="item-wrapper"> 
+      											<span class="item-number">02 Степени тяжести заболевания</span><p class="item-text">Чем более запущено заболевание, чем выше степень тяжести, тем менее эффективна будет клеточная терапия.</p>
+      								</li>
+      								
+      									<li class="item-wrapper"> 
+      											<span class="item-number">03 Качества применяемых клеток</span><p class="item-text">Стволовые клетки, взятые у пожилых людей, обладают очень низкой способностью к делению. Это непременно скажется на эффективности лечения. На качество биопрепарата также влияют расходные материалы и среды, применяемые при культивировании клеток. В МЦ «СмартМедикалЦелл» используют только брендовые материалы и оборудование.</p>
+      								</li>
+      								
+      									<li class="item-wrapper"> 
+      											<span class="item-number">04 Количества стволовых клеток</span><p class="item-text">Введенных за 1 процедуру. Оно должно быть ровно таким, чтобы достичь максимального положительного эффекта. Малые дозы, особенно при внутривенном введении не позволяют достичь желаемого эффекта иvдискредитируют сам метод лечения стволовыми клетками. В то же время научные исследования показывают, что введение слишком большого количества клеток сопряжено с худшими клиническими результатами. То есть, мегадозы оказывают противоположное тормозящее действие на организм.</p>
+      								</li>
+      								
+      									<li class="item-wrapper"> 
+      											<span class="item-number">05 Регулярности применения стволовых клеток</span><p class="item-text">Систематичное и добросовестное выполнение рекомендаций - очень важный аспект в лечении любого заболевания. Клеточная терапия не исключение. Эффект от применения стволовых клеток не длится вечно. Оптимальную длительность интервалов между курсами клеточной терапии определяет доктор на основании особенностей заболевания и данных пациента.</p>
+      								</li>
+      								
+
+      					</ul>
+      						<p class="cells-efficiency-text">Первые результаты от применения стволовых клеток</p>
+      						<p class="cells-efficiency-text">Вы сможете оценить примерно через 1 месяц после их введения</p>
+      					</div>
+      					<!-- /.cells-efficiency-dependencies -->
+      				</div>
+      				<!-- /.wrapper -->
+      			</div>
+      			<!-- /.container -->
+
+      		</section>
+      		<section class="patients-cells-safety">
+      				<div class="container">
+      					<div class="section-title">
+      					  <span class="section-title-number">05</span>
+      					  <h2 class="section-title-name">Безопасность</h2>
+      					</div>
+      					<div class="wrapper">
+      						<h3 class="title-item">Безопасность терапии</h3>
+      						<div class="img-right">
+      						    <picture class="img-wrapper">
+      						        <source media="(max-width: 980px)"
+      						          srcset="./assets/images/patients-cells/therapy-safety.jpg">
+      						          <source media="(max-width: 480px)"
+      						          srcset="./assets/images/patients-cells/therapy-safety.jpg">
+      						        <img loading="lazy"   src="./assets/images/patients-cells/therapy-safety.jpg" srcset="./assets/images/patients-cells/therapy-safety.jpg" alt="Бакпосев">
+      						      </picture>
+      							<!-- /.img-wrapper -->
+      							<div class="text-wrapper">
+      									 
+      										<p>
+      											Конечно же, действие стволовых клеток изучено в недостаточной мере. Тем не менее, до сих пор нет сведений о негативном влиянии собственных и даже чужих мезенхимальных стволовых клеток на организм пациентов. А ведь счёт уже идёт на миллионы случаев клеточной терапии.
+      											</p>
+      											 
+      										<p>
+      											По данным литературы лишь эмбриональные стволовые клетки обладают онкогенными свойствами. Но в МЦ «СмартМедикалЦелл» их не применяют.
+      											</p>
+      											
+      							</div>
+      							<!-- /.text-wrapper -->
+      						</div>
+      						<!-- /.img-right -->
+      					</div>
+      					<!-- /.wrapper -->
+      				</div>
+      				<!-- /.container -->
+      			</section>
+      			<section class="patients-cells-research">
+      				<div class="container">
+      					<div class="section-title">
+      					  <span class="section-title-number">06</span>
+      					  <h2 class="section-title-name">Исследования</h2>
+      					</div>
+      					<div class="wrapper">
+      						<div class="patients-cells-research-block">
+      						<h3 class="title-item">Исследовательская деятельность</h3>
+      						<p class="patients-cells-research-text">Все данные, которые представляют научную ценность, будут учтены и использованы в интересах науки.</p>
+      						<a href="about__research.html" class="btn btn-color patients-cells-research-btn">подробнее</a>
+      						</div>
+      						<!-- /.patients-cells-research-block -->
+
+      					</div>
+      					<!-- /.wrapper -->
+      				</div>
+      				<!-- /.container -->
+      			</section>
+    </main>
+    <footer class="footer">
+      <div class="section-dark-background non-text-node"></div>
+      <div class="footer-top pattern">
+        <div class="container">
+          <div class="footer-inner">
+            <div class="footer-item-holder footer-contact">
+
+              <div class="footer-item-inner">
+                <figure class="footer-logo">
+
+                    <a href="index.html" class="footer-logo-link"><img loading="lazy"   src="assets/images/icons/footer/logo.svg" alt="Fifth Step Stem Cell Treatment Center"></a>
+                </figure>
+                <ul class="footer-contact-list">
+                  <li>
+                    <div class="icon">
+                      <svg enable-background="new 0 0 97.713 97.713" version="1.1" viewBox="0 0 97.713 97.713"
+                        xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m48.855 0c-19.834 0-35.972 16.138-35.972 35.974 0 5.174 1.059 10.114 3.146 14.684 8.994 19.681 26.238 40.46 31.31 46.359 0.38 0.441 0.934 0.695 1.517 0.695s1.137-0.254 1.517-0.695c5.07-5.898 22.314-26.676 31.311-46.359 2.088-4.57 3.146-9.51 3.146-14.684-2e-3 -19.836-16.14-35.974-35.975-35.974zm0 54.659c-10.303 0-18.686-8.383-18.686-18.686 0-10.304 8.383-18.687 18.686-18.687s18.686 8.383 18.686 18.687c1e-3 10.303-8.382 18.686-18.686 18.686z" />
+                      </svg>
+                    </div>
+                    <span>ул. 23 Августа, 59</span>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg version="1.1" viewBox="0 0 578.106 578.106" xml:space="preserve"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m577.83 456.13c1.225 9.385-1.635 17.545-8.568 24.48l-81.396 80.781c-3.672 4.08-8.465 7.551-14.381 10.404-5.916 2.857-11.729 4.693-17.439 5.508-0.408 0-1.635 0.105-3.676 0.309-2.037 0.203-4.689 0.307-7.953 0.307-7.754 0-20.301-1.326-37.641-3.979s-38.555-9.182-63.645-19.584c-25.096-10.404-53.553-26.012-85.376-46.818-31.823-20.805-65.688-49.367-101.59-85.68-28.56-28.152-52.224-55.08-70.992-80.783-18.768-25.705-33.864-49.471-45.288-71.299-11.425-21.828-19.993-41.616-25.705-59.364s-9.588-33.048-11.628-45.9-2.856-22.95-2.448-30.294 0.612-11.424 0.612-12.24c0.816-5.712 2.652-11.526 5.508-17.442s6.324-10.71 10.404-14.382l81.396-81.396c5.712-5.712 12.24-8.568 19.584-8.568 5.304 0 9.996 1.53 14.076 4.59s7.548 6.834 10.404 11.322l65.484 124.24c3.672 6.528 4.692 13.668 3.06 21.42s-5.1 14.28-10.404 19.584l-29.988 29.988c-0.816 0.816-1.53 2.142-2.142 3.978s-0.918 3.366-0.918 4.59c1.632 8.568 5.304 18.36 11.016 29.376 4.896 9.792 12.444 21.726 22.644 35.802s24.684 30.293 43.452 48.653c18.36 18.77 34.68 33.354 48.96 43.76 14.277 10.4 26.215 18.053 35.803 22.949s16.932 7.854 22.031 8.871l7.648 1.531c0.816 0 2.145-0.307 3.979-0.918 1.836-0.613 3.162-1.326 3.979-2.143l34.883-35.496c7.348-6.527 15.912-9.791 25.705-9.791 6.938 0 12.443 1.223 16.523 3.672h0.611l118.12 69.768c8.571 5.308 13.67 12.038 15.303 20.198z" />
+                      </svg>
+                    </div>
+
+                    <a href="tel:+380440001100">+38 (044) 000-11-00</a>
+
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg version="1.1" viewBox="0 0 485.211 485.211" xml:space="preserve"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m485.21 363.91c0 10.637-2.992 20.498-7.785 29.174l-153.2-171.41 151.54-132.58c5.895 9.355 9.446 20.344 9.446 32.219v242.6zm-242.6-111.11l210.86-184.5c-8.653-4.737-18.397-7.642-28.908-7.642h-363.91c-10.524 0-20.271 2.905-28.889 7.642l210.84 184.5zm58.787-11.162l-48.809 42.734c-2.855 2.487-6.41 3.729-9.978 3.729-3.57 0-7.125-1.242-9.98-3.729l-48.82-42.736-155.14 173.6c9.299 5.834 20.197 9.329 31.983 9.329h363.91c11.784 0 22.687-3.495 31.983-9.329l-155.15-173.6zm-291.94-152.55c-5.894 9.355-9.448 20.344-9.448 32.22v242.6c0 10.637 2.978 20.498 7.789 29.174l153.18-171.44-151.52-132.56z" />
+                      </svg>
+                    </div>
+                    <a href="mailto:info@mailadress.org">info@mailadress.org</a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="footer-item-holder">
+              <ul class="footer-nav footer-list" role="menubar">
+                <li role="menuitem">
+                  <a href="index.html">Главная</a>
+                </li>
+                <li role="menuitem">
+                  <a href="diseases.html">Заболевания</a>
+                </li>
+                <li role="menuitem">
+                  <a href="rejuvenation.html">Омоложение</a>
+                </li>
+                <li role="menuitem">
+                  <a href="price-list.html">Прайс-лист</a>
+                </li>
+                <li role="menuitem">
+                  <a href="contacts.html">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-item-holder">
+              <h3 class="sub-title3">О нас</h3>
+              <ul class="footer-list" role="menubar">
+                <li role="menuitem">
+                  <a href="about__our-mission.html">Наша миссия</a>
+                </li>
+                <li role="menuitem">
+                  <a href="about__our-clinic.html">О мед.центре</a>
+                </li>
+                <li role="menuitem">
+                  <a href="about__documents.html">Наши патенты</a>
+                </li>
+                <li role="menuitem">
+                  <a href="about__research.html">Исследовательские программы</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-item-holder">
+              <h3 class="sub-title3">Пациентам</h3>
+              <ul class="footer-list" role="menubar">
+                <li role="menuitem">
+                  <a href="service-knowledge-base__about-cells.html">О клетках</a>
+                </li>
+                <li role="menuitem">
+                  <a href="service-knowledge-base__about-service.html">Об услуге</a>
+                </li>
+                <li role="menuitem">
+                  <a href="404.html">Связаться с нами</a>
+                </li>
+                <li role="menuitem">
+                  <a href="service-knowledge-base__tourism.html">Туризм</a>
+                </li >
+                <li role="menuitem">
+                  <a href="404.html">Личный кабинет</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-item-holder">
+              <h3 class="sub-title3">Блог</h3>
+              <ul class="footer-list" role="menubar">
+                <li role="menuitem">
+                  <a href="blog__articles.html">Статьи</a>
+                </li>
+                <li role="menuitem">
+                  <a href="blog__photos.html">Фото</a>
+                </li>
+                <li role="menuitem">
+                  <a href="blog__events.html">События</a>
+                </li>
+                <li role="menuitem">
+                  <a href="blog__history.html">История</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2020 All Rights Reserved
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/p5" defer></script>
+  <script src="assets/js/vendor.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/animatedmodal@1.0.0/animatedModal.min.js" defer></script> 
+  <script src="assets/js/app.js" defer></script>
+  <script>
+      window.addEventListener('load', function () {
+        circlesPlugin({
+          circles: [
+            {
+              img:'assets/images/icons/circle-blue.svg',
+              freq: 2
+            },
+            {
+              img:'assets/images/icons/circle-red.svg',
+            },
+            {
+              img:'assets/images/icons/circle-red-blurred.svg',
+            }
+          ]
+        });;
+      }); 
+    </script>
+</body>
+
+</html>
